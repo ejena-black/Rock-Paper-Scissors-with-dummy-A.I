@@ -59,8 +59,13 @@ while player_score < goal and com_score < goal:
         print(f'Player has not made a move,')
 
     if player_score == goal:
-        print(f'Player wins with {player_score} out of {goal}')
         break
     elif com_score == goal:
-        print(f'Computer wins with {com_score} out of {goal}')
         break
+
+if player_score > com_score:
+    print(f'Player wins')
+else:
+    print(f'Computer wins')
+
+print(f'Final score: \n Player: {player_score} and Computer: {goal}')
